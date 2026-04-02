@@ -8,6 +8,9 @@
         public string PasswordHash { get; set; } = string.Empty;
         public ICollection<Tarefa> Tarefas { get; set; } = new List<Tarefa>();
 
-
+        internal object ToResponseDto()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
